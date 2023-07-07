@@ -1,1 +1,71 @@
-/*# sourceMappingURL=style.css.map */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: monospace, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.wrapper {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 6px solid #333;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.wrapper .question {
+  margin-bottom: 10px;
+}
+.wrapper .options h3 {
+  margin: 25px;
+  text-align: center;
+  font-size: 21px;
+}
+.wrapper .options .option {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.wrapper .options .option:hover {
+  transform: scale(1.025);
+}
+.wrapper .submit-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.6s, transform 0.4s;
+}
+.wrapper .submit-btn:hover {
+  background-color: rgb(0, 0, 1);
+  transform: scale(1.075);
+}
+
+.result {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
