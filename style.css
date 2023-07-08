@@ -29,11 +29,12 @@ h1 {
   font-size: 18px;
   border-radius: 5px;
   background-color: #fff;
-  transition: transform 0.2s;
+  transition: transform 0.2s, background-color 0.3s;
   cursor: pointer;
 }
 .wrapper .options .option:hover {
   transform: scale(1.025);
+  background-color: #ccc;
 }
 .wrapper .options .option.selected {
   background-color: #ff9800;
