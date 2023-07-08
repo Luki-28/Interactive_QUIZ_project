@@ -4,8 +4,6 @@ const score = document.querySelector(".correct-answers")
 const playAgain = document.querySelector(".play-again")
 
 let correctAnswers = 0
-let totalQuestions = questions.length
-let question
 
 const checkAnswer = e => {
 	const currentQuestion = e.target.previousElementSibling
@@ -33,7 +31,6 @@ const checkAnswer = e => {
 		correctOption.classList.add("correct")
 	}
 	score.textContent = correctAnswers
-
 	const currentButton = e.target
 	currentButton.disabled = true
 }
@@ -46,7 +43,6 @@ const selectOption = e => {
 	options.forEach(option => {
 		option.classList.remove("selected")
 	})
-
 	currentOption.classList.add("selected")
 }
 
@@ -62,9 +58,8 @@ const resetQuiz = () => {
 		})
 	})
 	submitButtons.forEach(button => {
-		const currentButton = button.target
-		currentButton.disabled = false
-	})
+		button.disabled = false;
+	  });
 }
 
 submitButtons.forEach(button => {

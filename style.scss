@@ -28,7 +28,6 @@ h1 {
     font-size: 21px;
   }
   .options {
-
     .option {
       display: block;
       width: 100%;
@@ -71,7 +70,6 @@ h1 {
     color: $white-color;
     cursor: pointer;
     transition: background-color .6s, transform .4s;
-
     &:hover {
       background-color: rgba(0, 0, 0.7);
       transform: scale(1.075);
